@@ -141,6 +141,64 @@ table{font-size:16px}th{font-size:14px}th,td{padding:17px 18px;line-height:1.65}
 .checkitem strong{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}
 @media (max-width:980px){.visual-notes,.visual-split{grid-template-columns:1fr}}
 
+
+.home-button{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:16px;padding:11px 14px;border-radius:10px;background:var(--serene);color:#fff!important;font-size:13px;font-weight:800;letter-spacing:-.01em;box-shadow:0 10px 24px rgba(44,107,114,.22);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.home-button:hover{background:#245b61;transform:translateY(-1px);box-shadow:0 14px 30px rgba(44,107,114,.28)}
+.home-button svg{width:17px;height:17px;flex:0 0 auto}
+.mobile-home{display:none;position:fixed;right:18px;bottom:18px;z-index:90;width:48px;height:48px;border-radius:50%;align-items:center;justify-content:center;background:var(--serene);color:#fff;box-shadow:0 12px 30px rgba(44,107,114,.32)}
+.mobile-home svg{width:21px;height:21px}
+@media(max-width:820px){.mobile-home{display:flex}.home-button{margin-top:12px}}
+@media print{.home-button,.mobile-home{display:none!important}}
+
+
+/* Opening narrative slides */
+.opening-slide{min-height:100vh;padding:76px clamp(28px,5vw,86px);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.opening-slide .open-num{font-size:12px;letter-spacing:.14em;font-weight:900;color:var(--muted);margin-bottom:20px;text-transform:uppercase}
+.opening-slide .open-kicker{font-size:13px;letter-spacing:.12em;font-weight:900;color:var(--serene);margin-bottom:18px}
+.opening-title{font-size:clamp(42px,6.2vw,88px);line-height:1.02;letter-spacing:-.055em;max-width:1150px}
+.opening-title em{font-style:normal;color:var(--serene)}
+.opening-sub{font-size:clamp(18px,2.2vw,28px);line-height:1.5;color:#4c4944;max-width:980px;margin-top:24px}
+.opening-1{background:radial-gradient(circle at 83% 18%,rgba(154,89,89,.13),transparent 32%),linear-gradient(145deg,#fbfaf8,#f2efeb)}
+.opening-2{background:linear-gradient(145deg,#171717 0%,#24211f 55%,#2c3738 100%);color:#fff}
+.opening-2 .open-num,.opening-2 .open-kicker{color:#b7d0d2}.opening-2 .opening-sub{color:#d3cfca}
+.opening-3{background:radial-gradient(circle at 78% 24%,rgba(44,107,114,.17),transparent 32%),linear-gradient(145deg,#fbfaf8,#edf1f0)}
+.belief-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:38px;max-width:1180px}
+.belief-card{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 26px rgba(30,28,25,.045)}
+.belief-card .belief-no{font-size:11px;letter-spacing:.1em;color:var(--risk);font-weight:900;margin-bottom:9px}
+.belief-card strong{font-size:19px;line-height:1.42;display:block}
+.belief-card p{font-size:15px;color:#5a5650;margin-top:8px}
+.reversal-line{display:flex;align-items:center;gap:18px;margin-top:32px;padding:22px 26px;border-radius:18px;background:#fff;border:1px solid #d9d5cf;max-width:1120px;box-shadow:var(--shadow)}
+.reversal-line .keyword{font-size:clamp(34px,5vw,66px);font-weight:950;color:var(--serene);letter-spacing:-.06em;white-space:nowrap}
+.reversal-line p{font-size:clamp(17px,2vw,24px);font-weight:750;line-height:1.45}
+.question-box{margin-top:38px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);border-radius:24px;padding:clamp(30px,5vw,58px);max-width:1180px;box-shadow:0 28px 80px rgba(0,0,0,.18)}
+.question-box .wrong-q{font-size:clamp(34px,5.3vw,76px);font-weight:900;letter-spacing:-.055em;line-height:1.1;color:#fff}
+.question-box .strike{position:relative;display:inline-block}.question-box .strike:after{content:"";position:absolute;left:-2%;right:-2%;top:53%;height:6px;background:#c76d6d;transform:rotate(-2deg);border-radius:999px}
+.question-box .turn{margin-top:28px;font-size:14px;font-weight:900;letter-spacing:.13em;color:#9fc3c6;text-transform:uppercase}
+.question-box .right-q{font-size:clamp(28px,4vw,58px);font-weight:900;letter-spacing:-.045em;line-height:1.2;margin-top:12px;color:#d9f0f1}
+.question-box .right-q em{font-style:normal;color:#fff;background:linear-gradient(transparent 62%,rgba(116,190,195,.42) 62%)}
+.opening-logic{display:grid;grid-template-columns:1fr auto 1fr;gap:26px;align-items:center;margin-top:36px;max-width:1150px}
+.opening-logic .logic-side{border-radius:22px;padding:28px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.opening-logic .logic-side.bad{opacity:.72}
+.opening-logic .logic-side h3{font-size:15px;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+.opening-logic .logic-side strong{font-size:clamp(25px,3vw,40px);line-height:1.25;display:block;letter-spacing:-.04em}
+.opening-logic .logic-arrow{font-size:42px;color:var(--serene);font-weight:900}
+.action-path{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:34px;max-width:1180px}
+.action-step{padding:14px 18px;border-radius:14px;background:#fff;border:1px solid var(--line);font-size:18px;font-weight:850;box-shadow:0 8px 18px rgba(30,28,25,.035)}
+.action-step.key{background:var(--serene);color:#fff;border-color:var(--serene)}
+.action-arrow{font-size:20px;color:var(--serene);font-weight:900}
+.opening-closing{margin-top:34px;font-size:clamp(24px,3.2vw,46px);font-weight:900;line-height:1.3;letter-spacing:-.04em;max-width:1040px}
+.opening-closing mark{background:linear-gradient(transparent 60%,#cfe3e4 60%);color:inherit}
+.speaker-note{margin-top:30px;max-width:1100px;border:1px dashed rgba(99,93,84,.35);border-radius:16px;background:rgba(255,255,255,.56);overflow:hidden}
+.opening-2 .speaker-note{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.05)}
+.speaker-note summary{cursor:pointer;list-style:none;padding:14px 18px;font-size:13px;font-weight:900;letter-spacing:.05em;color:var(--muted)}
+.opening-2 .speaker-note summary{color:#bfc7c5}.speaker-note summary::-webkit-details-marker{display:none}
+.speaker-note summary:before{content:"＋";display:inline-block;margin-right:9px;color:var(--serene);font-size:16px}.speaker-note[open] summary:before{content:"－"}
+.speaker-note .speaker-copy{padding:0 18px 18px;font-size:16px;line-height:1.75;color:#4f4b45}
+.opening-2 .speaker-note .speaker-copy{color:#e5e1dc}
+@media(max-width:980px){.belief-grid{grid-template-columns:1fr 1fr}.opening-logic{grid-template-columns:1fr}.opening-logic .logic-arrow{transform:rotate(90deg);justify-self:center}.reversal-line{align-items:flex-start;flex-direction:column}.reversal-line .keyword{white-space:normal}}
+@media(max-width:650px){.belief-grid{grid-template-columns:1fr}.action-step{width:100%;text-align:center}.action-arrow{width:100%;text-align:center;transform:rotate(90deg)}}
+@media print{.speaker-note{display:none}.opening-slide{break-after:page}}
+
 </style>
 </head>
 <body>
@@ -150,11 +208,59 @@ table{font-size:16px}th{font-size:14px}th,td{padding:17px 18px;line-height:1.65}
 <h1>왜 퍼널 마케팅이어야 하는가</h1>
 <div class="meta">일본 환자 유치 인식 개선 REPORT<br/>세린 5월 리포트 확장 페이지</div>
 <nav id="toc">
-<a href="#s0">00. 표지</a><a href="#s1">01. 결론</a><a href="#s2">02. 정·반·합</a><a href="#s3">03. 노출 중심의 한계</a><a href="#s4">04. 통합 구조</a><a href="#s5">05. 브랜드 벡터</a><a href="#s6">06. 브랜드 채널</a><a href="#s7">07. 콘텐츠 시스템</a><a href="#s8">08. 퍼널 원리</a><a href="#s9">09. TOF</a><a href="#s10">10. MOF</a><a href="#s11">11. BOF</a><a href="#s12">12. 환자 여정</a><a href="#s13">13. 콘텐츠 매트릭스</a><a href="#s14">14. KPI</a><a href="#s15">15. 실행 로드맵</a><a href="#s16">16. 리스크</a><a href="#s17">17. 근거 자료</a><a href="#s18">18. 비주얼 개념도</a><a href="#s19">19. 이뻐 사례</a><a href="#s20">20. 최종 메시지</a>
+<a href="#open1">OPEN 1. 고정관념</a><a href="#open2">OPEN 2. 반전 질문</a><a href="#open3">OPEN 3. 관점 전환</a><a href="#s0">00. 표지</a><a href="#s1">01. 결론</a><a href="#s2">02. 정·반·합</a><a href="#s3">03. 노출 중심의 한계</a><a href="#s4">04. 통합 구조</a><a href="#s5">05. 브랜드 벡터</a><a href="#s6">06. 브랜드 채널</a><a href="#s7">07. 콘텐츠 시스템</a><a href="#s8">08. 퍼널 원리</a><a href="#s9">09. TOF</a><a href="#s10">10. MOF</a><a href="#s11">11. BOF</a><a href="#s12">12. 환자 여정</a><a href="#s13">13. 콘텐츠 매트릭스</a><a href="#s14">14. KPI</a><a href="#s15">15. 실행 로드맵</a><a href="#s16">16. 리스크</a><a href="#s17">17. 근거 자료</a><a href="#s18">18. 비주얼 개념도</a><a href="#s19">19. 이뻐 사례</a><a href="#s20">20. 최종 메시지</a>
 </nav>
-<div class="nav-actions"><button onclick="window.print()">PDF 저장</button><button onclick="document.documentElement.requestFullscreen?.()">전체 화면</button></div>
+<a aria-label="홈으로 이동" class="home-button" href="./index.html"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5.5 10.5V20h13v-9.5"></path><path d="M9.5 20v-6h5v6"></path></svg> HOME</a><div class="nav-actions"><button onclick="window.print()">PDF 저장</button><button onclick="document.documentElement.requestFullscreen?.()">전체 화면</button></div>
 </aside>
 <main class="main">
+<section class="opening-slide opening-1" id="open1">
+<div class="open-num">OPENING 01 / COMMON BELIEFS</div>
+<div class="open-kicker">우리는 마케팅을 이렇게 배워왔습니다</div>
+<h1 class="opening-title">대부분의 사람은<br/><em>마케팅 = 광고</em>라고 생각합니다.</h1>
+<p class="opening-sub">그리고 광고를 많이 하면, 좋은 가격을 보여주면, 조회수가 높아지면 환자가 자연스럽게 올 것이라고 믿습니다.</p>
+<div class="belief-grid">
+<article class="belief-card"><div class="belief-no">고정관념 01</div><strong>광고를 많이 하면 환자가 온다.</strong><p>도달과 노출을 늘리면 문의와 예약도 함께 늘어난다고 생각합니다.</p></article>
+<article class="belief-card"><div class="belief-no">고정관념 02</div><strong>조회수와 팔로워가 높으면 마케팅이 잘된 것이다.</strong><p>보이는 숫자가 곧 실제 매출과 전환을 의미한다고 판단합니다.</p></article>
+<article class="belief-card"><div class="belief-no">고정관념 03</div><strong>좋은 시술과 낮은 가격이면 선택받는다.</strong><p>상품과 가격만 충분히 경쟁력 있으면 설명 과정은 짧아도 된다고 봅니다.</p></article>
+<article class="belief-card"><div class="belief-no">고정관념 04</div><strong>모든 고객에게 같은 광고를 보여줘도 된다.</strong><p>처음 보는 사람과 예약 직전 사람이 같은 메시지에 반응할 것이라 기대합니다.</p></article>
+<article class="belief-card"><div class="belief-no">고정관념 05</div><strong>광고는 집행 즉시 예약을 만들어야 한다.</strong><p>고관여 의료 선택도 일반 상품처럼 한 번의 클릭으로 끝날 수 있다고 봅니다.</p></article>
+<article class="belief-card"><div class="belief-no">고정관념 06</div><strong>마케팅 성과는 마지막 예약 건수로 판단한다.</strong><p>그전에 형성된 기억, 검토, 저장, 재방문은 성과에서 제외됩니다.</p></article>
+</div>
+<div class="reversal-line"><div class="keyword">절반만 맞습니다.</div><p>노출도, 가격도, 콘텐츠도 필요합니다. 하지만 <strong>환자가 움직이는 순서</strong>가 빠지면, 모든 노력은 서로 연결되지 않습니다.</p></div>
+<details class="speaker-note"><summary>발표자 오프닝 멘트</summary><div class="speaker-copy">“여기 계신 분들께 먼저 질문드리겠습니다. 마케팅이라고 하면 가장 먼저 무엇이 떠오르십니까? 광고, 조회수, 팔로워, 할인 이벤트일 겁니다. 모두 필요합니다. 그런데 병원 마케팅이 여기서 멈추면, 환자는 많이 보지만 움직이지 않습니다. 오늘은 그 이유를 말씀드리겠습니다.”</div></details>
+</section>
+<section class="opening-slide opening-2" id="open2">
+<div class="open-num">OPENING 02 / THE WRONG QUESTION</div>
+<div class="open-kicker">마케팅을 가장 자주 망치는 질문</div>
+<h1 class="opening-title">우리는 광고가 끝나면<br/>늘 같은 질문을 합니다.</h1>
+<div class="question-box">
+<div class="wrong-q"><span class="strike">“이번 광고에서 예약이 몇 건 나왔나요?”</span></div>
+<div class="turn">Perspective Shift</div>
+<div class="right-q">“이 광고는 환자를 <em>다음 단계로 몇 % 이동</em>시켰나요?”</div>
+</div>
+<p class="opening-sub">첫 질문은 결과만 봅니다. 두 번째 질문은 결과가 만들어지는 구조를 봅니다. 퍼널 마케팅은 바로 이 질문의 전환에서 시작됩니다.</p>
+<details class="speaker-note"><summary>발표자 전환 멘트</summary><div class="speaker-copy">“예약이 몇 건 나왔느냐는 질문은 틀리지 않습니다. 다만 너무 빠른 질문입니다. 처음 본 환자에게 예약을 요구하고, 예약 직전 환자에게 브랜드 소개만 반복하면 어느 쪽도 움직이지 않습니다. 그래서 우리는 예약 건수 이전에 ‘다음 단계로의 이동’을 측정해야 합니다.”</div></details>
+</section>
+<section class="opening-slide opening-3" id="open3">
+<div class="open-num">OPENING 03 / THE NEW DEFINITION</div>
+<div class="open-kicker">오늘 바꿔야 할 단 하나의 관점</div>
+<h1 class="opening-title">마케팅은 사람을 설득하는 기술이 아니라,<br/><em>사람의 다음 행동을 설계하는 기술</em>입니다.</h1>
+<div class="opening-logic">
+<div class="logic-side bad"><h3>기존의 관점</h3><strong>더 많이 보여주면<br/>더 많이 예약한다.</strong></div>
+<div class="logic-arrow">→</div>
+<div class="logic-side"><h3>전환된 관점</h3><strong>단계에 맞게 보여주면<br/>다음 행동이 만들어진다.</strong></div>
+</div>
+<div class="action-path">
+<span class="action-step">노출</span><span class="action-arrow">→</span>
+<span class="action-step">기억</span><span class="action-arrow">→</span>
+<span class="action-step">검토</span><span class="action-arrow">→</span>
+<span class="action-step">신뢰</span><span class="action-arrow">→</span>
+<span class="action-step">질문</span><span class="action-arrow">→</span>
+<span class="action-step key">예약</span>
+</div>
+<p class="opening-closing">오늘의 발표는 광고 효율을 설명하는 보고서가 아닙니다.<br/><mark>왜 환자가 움직이는지, 그 경로를 설계하는 보고서</mark>입니다.</p>
+<details class="speaker-note"><summary>본론 진입 멘트</summary><div class="speaker-copy">“이제부터 광고 자체를 보지 않겠습니다. 환자가 처음 병원을 본 순간부터, 비교하고, 믿고, 질문하고, 예약하는 전체 이동 경로를 보겠습니다. 이 경로가 바로 TOF·MOF·BOF 퍼널이며, 세린과 이뻐가 마케팅을 운영해야 하는 방식입니다.”</div></details>
+</section>
 <section class="section hero" id="s0">
 <div class="kicker">Funnel Marketing Necessity Report</div>
 <h1 class="title">병원 마케팅은<br/><em>노출을 사는 일</em>이 아니라<br/>신뢰가 전환되는 <em>경로를 설계</em>하는 일이다.</h1>
@@ -385,7 +491,6 @@ table{font-size:16px}th{font-size:14px}th,td{padding:17px 18px;line-height:1.65}
 </div>
 <div class="evidence-note"><strong>주의:</strong> 위 연구와 공식 자료는 퍼널 마케팅의 인과효과를 세린·이뻐 캠페인에서 자동으로 보장하지 않습니다. 실제 효과는 국가, 시술, 브랜드 인지도, 소재, 예산, 상담 품질에 따라 달라지므로 퍼널별 KPI와 예약·매출 데이터를 연결한 자체 실험으로 검증해야 합니다.</div>
 </section>
-
 <section class="section compact" id="s18">
 <div class="num">18 / VISUAL SUMMARY</div>
 <div class="kicker">비주얼 개념도로 보는 퍼널 마케팅</div>
@@ -439,5 +544,5 @@ table{font-size:16px}th{font-size:14px}th,td{padding:17px 18px;line-height:1.65}
 const sections=[...document.querySelectorAll('section[id]')], links=[...document.querySelectorAll('#toc a')];
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-35% 0px -55% 0px'});sections.forEach(s=>io.observe(s));
 </script>
-</body>
+<a aria-label="홈으로 이동" class="mobile-home" href="./index.html"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5.5 10.5V20h13v-9.5"></path><path d="M9.5 20v-6h5v6"></path></svg></a></body>
 </html>
