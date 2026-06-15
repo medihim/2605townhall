@@ -1,0 +1,124 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>03. 일본 다이렉트 사업성과</title><meta name="description" content="일본 직접광고 퍼널, CS, 시술, 수익성"><style>
+:root{
+  --bg:#f7f7f4;--paper:#fff;--ink:#171717;--muted:#676767;--line:#deded8;
+  --soft:#f1f1ec;--accent:#111;--gold:#8b6f47;--ok:#2f6f50;--danger:#a23b3b;
+  --blue:#2f4f6f;--shadow:0 18px 50px rgba(0,0,0,.08);--radius:22px
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,
+"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;line-height:1.7;word-break:keep-all}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(247,247,244,.9);backdrop-filter:blur(16px);
+border-bottom:1px solid var(--line)}
+.nav{max-width:1240px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:950;letter-spacing:-.04em}.links{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+.links a{color:var(--muted);text-decoration:none}.links a:hover{color:var(--ink)}
+.wrap{max-width:1240px;margin:auto;padding:0 22px}
+.hero{padding:76px 0 42px}.eyebrow{display:inline-block;padding:7px 12px;border:1px solid var(--line);
+border-radius:999px;background:rgba(255,255,255,.7);font-size:13px;color:var(--muted);margin-bottom:22px}
+h1{font-size:clamp(38px,5vw,72px);line-height:1.08;letter-spacing:-.07em;margin:0;max-width:1060px}
+.hero p{font-size:clamp(17px,2vw,23px);color:#333;max-width:980px;letter-spacing:-.03em}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.meta span{background:#fff;border:1px solid var(--line);
+border-radius:999px;padding:7px 11px;font-size:13px;color:var(--muted)}
+section{padding:46px 0}.section-head{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-bottom:24px}
+.no{font-size:13px;color:var(--muted);font-weight:900;letter-spacing:.04em;padding-top:8px}
+h2{font-size:clamp(28px,3.2vw,46px);line-height:1.15;letter-spacing:-.06em;margin:0}
+.lead{font-size:18px;color:#333;max-width:950px;margin:15px 0 0}
+.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(4,1fr)}
+.cards-2{grid-template-columns:repeat(2,1fr)}.cards-3{grid-template-columns:repeat(3,1fr)}
+.card,.gate-card,.note,.decision{background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+padding:24px;box-shadow:var(--shadow)}
+.kpi .label{font-size:14px;font-weight:900;color:var(--muted)}.kpi .value{font-size:36px;font-weight:950;
+letter-spacing:-.055em;margin:8px 0}.kpi .sub{font-size:13px;color:var(--muted)}
+.gate-card{display:block;text-decoration:none;color:inherit;transition:.2s;min-height:245px}
+.gate-card:hover{transform:translateY(-4px);border-color:#bbb}.tag{display:inline-block;background:var(--soft);
+padding:5px 9px;border-radius:999px;font-size:12px;font-weight:900;margin-bottom:10px}
+.gate-card h3,.card h3{font-size:22px;letter-spacing:-.04em;margin:0 0 10px}.gate-card p,.card p{color:var(--muted);margin:0}
+.gate-card ul,.card ul{color:var(--muted);padding-left:18px;font-size:14px}.gate-card li,.card li{margin:5px 0}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:18px;
+overflow:hidden;box-shadow:var(--shadow)}th,td{padding:14px 15px;border-bottom:1px solid var(--line);text-align:left;
+vertical-align:top;font-size:14px}th{background:#111;color:#fff;font-weight:900}tr:last-child td{border-bottom:0}
+.table-wrap{overflow-x:auto;border-radius:18px}.status{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:900}
+.good{background:#dceee4;color:#16442c}.mid{background:#efe5d3;color:#6f5430}.bad{background:#f2dddd;color:#6b2424}
+.info{background:#e1e9f1;color:#243f59}.note{background:#f8f4ec;border-color:#e7dcca;color:#4a3822}
+.note strong{display:block;margin-bottom:6px}.kpt{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.kpt .card:nth-child(1){border-top:4px solid var(--ok)}.kpt .card:nth-child(2){border-top:4px solid var(--danger)}
+.kpt .card:nth-child(3){border-top:4px solid var(--blue)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{background:#fff;border:1px solid var(--line);
+border-radius:18px;padding:19px;min-height:155px}.step .num{font-size:29px;font-weight:950;letter-spacing:-.05em}
+.step .label{font-weight:900;margin-top:5px}.step .sub{font-size:13px;color:var(--muted);margin-top:6px}
+footer{margin-top:45px;padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.actions{display:grid;gap:12px}.decision{display:grid;grid-template-columns:100px 1fr 1fr;gap:18px;align-items:start}
+.decision .p{background:#111;color:#fff;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:900;text-align:center}
+@media(max-width:1000px){.kpis,.cards-3{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.links{display:none}.section-head{grid-template-columns:1fr;gap:6px}.kpis,.cards-2,.cards-3,.kpt,.flow{grid-template-columns:1fr}
+.decision{grid-template-columns:1fr}th,td{min-width:140px}}
+@media print{.topbar{position:static}.card,.gate-card,table,.note,.decision{box-shadow:none}body{background:#fff}}
+</style></head><body>
+<header class="topbar"><nav class="nav">
+<div class="brand">SERENE Monthly Performance</div>
+<div class="links">
+<a href="index.html">HOME</a>
+<a href="01_total_business_report.html">세린 전체</a>
+<a href="02_agency_report.html">에이전시</a>
+<a href="03_japan_direct_report.html">일본 다이렉트</a>
+<a href="04_channel_comparison.html">채널 비교</a>
+<a href="05_data_methodology.html">데이터 기준</a>
+</div></nav></header>
+
+<main class="wrap">
+<section class="hero"><div class="eyebrow">03 / Japan Direct</div><h1>일본 다이렉트 사업성과</h1>
+<p>일본 직접광고의 TOF·MOF·BOF 퍼널부터 CS·예약·실제 시술·매출 수익성까지 분석합니다.</p></section>
+<section><div class="section-head"><div class="no">03.1 / KPI</div><div><h2>일본 다이렉트 종합 KPI</h2></div></div>
+<div class="grid kpis">
+<div class="card kpi"><div class="label">일본 광고비</div><div class="value">1.22M</div><div class="sub">원</div></div>
+<div class="card kpi"><div class="label">일본 환자</div><div class="value">5명</div></div>
+<div class="card kpi"><div class="label">진료매출</div><div class="value">7.71M</div><div class="sub">원</div></div>
+<div class="card kpi"><div class="label">메디힘 수익</div><div class="value">1.93M</div><div class="sub">원</div></div>
+</div></section>
+
+<section><div class="section-head"><div class="no">03.2 / FUNNEL FIRST</div><div><h2>1차 Report · 퍼널별 성과</h2>
+<p class="lead">퍼널 목적에 맞는 KPI로 각각 평가합니다.</p></div></div>
+<div class="table-wrap"><table><thead><tr><th>퍼널</th><th>광고비</th><th>핵심 KPI</th><th>실적</th><th>판정</th></tr></thead><tbody>
+<tr><td>TOF</td><td>763,935원</td><td>CPM / ThruPlay / 완주율</td><td>CPM 4,296원·ThruPlay 42,869</td><td><span class="status good">우수</span></td></tr>
+<tr><td>MOF</td><td>247,782원</td><td>CTR / CPC / 프로필 방문</td><td>CTR 2.25%·CPC 362원·방문 705</td><td><span class="status good">매우 우수</span></td></tr>
+<tr><td>BOF</td><td>210,935원</td><td>CTR / CPC / LPV율</td><td>CTR 2.83%·CPC 478원·LPV율 77.3%</td><td><span class="status good">매우 우수</span></td></tr>
+<tr><td>CS</td><td>—</td><td>LPV→문의 / 문의→예약</td><td>4.1% / 21.4%</td><td><span class="status mid">개선 필요</span></td></tr>
+</tbody></table></div></section>
+
+<section><div class="section-head"><div class="no">03.3 / METRIC SECOND</div><div><h2>2차 Report · 광고 지표별 분석</h2></div></div>
+<div class="grid cards-3">
+<div class="card"><h3>소재별</h3><p>광고비·CTR·CPC·LPV·영상조회 기준으로 확대·유지·중단 소재를 분류합니다.</p></div>
+<div class="card"><h3>타깃·예산별</h3><p>광고세트별 퍼널·포함·제외 타깃·예산 소진·성과 기여도를 판단합니다.</p></div>
+<div class="card"><h3>연령별</h3><p>연령별 광고비·CTR·CPC·LPV를 비교해 퍼널별 핵심 연령을 도출합니다.</p></div>
+<div class="card"><h3>도시별</h3><p>도쿄·오사카·후쿠오카 및 기타 지역의 비용과 반응을 비교합니다.</p></div>
+<div class="card"><h3>지면별</h3><p>피드·스토리·릴스의 노출·클릭·영상 효율을 비교합니다.</p></div>
+<div class="card"><h3>크리에이티브</h3><p>의사·시술·가격·후기·CTA·첫 3초를 퍼널 적합성 기준으로 진단합니다.</p></div>
+</div></section>
+
+<section><div class="section-head"><div class="no">03.4 / CS</div><div><h2>CS·예약 관측 전환</h2></div></div>
+<div class="flow">
+<div class="step"><div class="num">341</div><div class="label">LPV</div><div class="sub">BOF 확정치</div></div>
+<div class="step"><div class="num">14</div><div class="label">문의</div><div class="sub">LPV 대비 4.1%</div></div>
+<div class="step"><div class="num">3</div><div class="label">예약 이상</div><div class="sub">문의 대비 21.4%</div></div>
+<div class="step"><div class="num">5</div><div class="label">실제 환자</div><div class="sub">매출 데이터 기준</div></div>
+<div class="step"><div class="num">7.71M</div><div class="label">진료매출</div><div class="sub">원</div></div>
+</div>
+<div class="note"><strong>해석 제한</strong>CS 예약 3명과 매출 데이터 환자 5명은 동일 월·동일 고객 코호트가 아닐 수 있습니다. 예약→시술 전환율은 확정 계산하지 않습니다.</div>
+</section>
+
+<section><div class="section-head"><div class="no">03.5 / UNIT ECONOMICS</div><div><h2>일본 다이렉트 수익성</h2></div></div>
+<div class="table-wrap"><table><thead><tr><th>지표</th><th>값</th><th>해석</th></tr></thead><tbody>
+<tr><td>객단가</td><td>1,542,460원</td><td>현재 일본 직접채널의 평균 진료금액</td></tr>
+<tr><td>환자 획득비용</td><td>244,530원</td><td>전체 광고비 ÷ 일본 환자 5명</td></tr>
+<tr><td>병원매출 기준 ROAS</td><td>6.31배</td><td>관리용 대리지표</td></tr>
+<tr><td>메디힘 수익 기준 ROAS</td><td>1.58배</td><td>운영비 제외 전</td></tr>
+<tr><td>환자당 메디힘 수익</td><td>385,615원</td><td>광고비 차감 전</td></tr>
+<tr><td>환자당 광고비 차감 기여</td><td>141,085원</td><td>인건비·콘텐츠비 제외</td></tr>
+</tbody></table></div>
+<div class="kpt"><div class="card"><h3>KEEP</h3><ul><li>MOF·BOF 광고 효율</li><li>25% 메디힘 수익률</li></ul></div>
+<div class="card"><h3>PROBLEM</h3><ul><li>문의→예약 21.4%</li><li>광고·CS·시술 미연결</li></ul></div>
+<div class="card"><h3>TRY</h3><ul><li>10분 응답 SLA</li><li>일본 150만·200만원 패키지</li><li>UTM·환자 ID 연결</li></ul></div></div>
+</section>
+</main><footer><div class="wrap"><strong>Mediheim / Serene Clinic Monthly Report</strong><br>
+2026년 5월 광고·CS·시술·매출 원본을 기준으로 작성한 내부 경영 보고서입니다.</div></footer></body></html>
