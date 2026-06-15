@@ -54,6 +54,52 @@ footer{margin-top:45px;padding:36px 0 70px;border-top:1px solid var(--line);colo
 @media(max-width:760px){.links{display:none}.section-head{grid-template-columns:1fr;gap:6px}.kpis,.cards-2,.cards-3,.kpt,.flow{grid-template-columns:1fr}
 .decision{grid-template-columns:1fr}th,td{min-width:140px}}
 @media print{.topbar{position:static}.card,.gate-card,table,.note,.decision{box-shadow:none}body{background:#fff}}
+
+/* PAGE_THEME_OVERRIDE_START */
+:root{
+  --page-card-bg:#EDF3EE;
+  --page-card-border:#D6E1D7;
+  --page-title:#355746;
+  --page-subtitle:#617468;
+  --page-tag-bg:#DDE9DF;
+  --page-tag-text:#355746;
+}
+.card{
+  background:var(--page-card-bg);
+  border-color:var(--page-card-border);
+}
+section h2,.section-head h2,
+section h3,.card h3{
+  color:var(--page-title);
+}
+section .lead,.section-head .lead,
+.card .label,.card .sub{
+  color:var(--page-subtitle);
+}
+.tag{
+  background:var(--page-tag-bg);
+  color:var(--page-tag-text);
+}
+.card p,.card li,.kpi .value,
+table,th,td{
+  color:inherit;
+}
+/* PAGE_THEME_OVERRIDE_END */
+
+/* BODY_TEXT_SCALE_START */
+/* 본문 및 데이터 설명 텍스트 120% 확대 */
+body{font-size:120%;}
+.hero p{font-size:clamp(20px,2.2vw,27px);}
+.lead{font-size:21.6px;}
+.card p,.card li,.gate-card p,.gate-card li{font-size:16.8px;}
+th,td{font-size:16.8px;}
+.kpi .label{font-size:16.8px;}
+.kpi .sub,.step .sub,.meta span,.tag,.status,.no,footer{font-size:15.6px;}
+.note,.decision{font-size:19.2px;}
+.links{font-size:15.6px;}
+.step .label{font-size:19.2px;}
+/* BODY_TEXT_SCALE_END */
+
 </style></head><body>
 <header class="topbar"><nav class="nav">
 <div class="brand">SERENE Monthly Performance</div>
@@ -72,9 +118,9 @@ footer{margin-top:45px;padding:36px 0 70px;border-top:1px solid var(--line);colo
 <section><div class="section-head"><div class="no">01.1 / SUMMARY</div><div><h2>전체 성과 요약</h2></div></div>
 <div class="grid kpis">
 <div class="card kpi"><div class="label">환자 수</div><div class="value">56명</div></div>
-<div class="card kpi"><div class="label">진료매출</div><div class="value">86.0M</div><div class="sub">원</div></div>
-<div class="card kpi"><div class="label">평균 객단가</div><div class="value">1.54M</div><div class="sub">원</div></div>
-<div class="card kpi"><div class="label">메디힘 수익</div><div class="value">9.98M</div><div class="sub">원</div></div>
+<div class="card kpi"><div class="label">진료매출</div><div class="value">86,019,910원</div></div>
+<div class="card kpi"><div class="label">평균 객단가</div><div class="value">1,536,070원</div></div>
+<div class="card kpi"><div class="label">메디힘 수익</div><div class="value">9,975,056원</div></div>
 </div></section>
 
 <section><div class="section-head"><div class="no">01.2 / COUNTRY</div><div><h2>국가별 성과</h2>
@@ -92,9 +138,9 @@ footer{margin-top:45px;padding:36px 0 70px;border-top:1px solid var(--line);colo
 
 <section><div class="section-head"><div class="no">01.3 / CHANNEL</div><div><h2>유치경로별 구성</h2></div></div>
 <div class="grid cards-3">
-<div class="card"><span class="tag">아이메이</span><h3>규모형</h3><p>41명·진료매출 5,765만원. 환자 공급은 크지만 메디힘 수익률은 5%입니다.</p></div>
-<div class="card"><span class="tag">그루비엑스</span><h3>수익형</h3><p>10명·객단가 207만원·메디힘 수익률 25%입니다.</p></div>
-<div class="card"><span class="tag">일본 다이렉트</span><h3>자산형</h3><p>5명·객단가 154만원·메디힘 수익률 25%. 자체 데이터 축적 가능성이 있습니다.</p></div>
+<div class="card"><span class="tag">아이메이</span><h3>규모형</h3><p>41명·진료매출 57,649,610원. 환자 공급은 크지만 메디힘 수익률은 5%입니다.</p></div>
+<div class="card"><span class="tag">그루비엑스</span><h3>수익형</h3><p>10명·객단가 2,065,800원·메디힘 수익률 25%입니다.</p></div>
+<div class="card"><span class="tag">일본 다이렉트</span><h3>자산형</h3><p>5명·객단가 1,542,460원·메디힘 수익률 25%. 자체 데이터 축적 가능성이 있습니다.</p></div>
 </div></section>
 
 <section><div class="section-head"><div class="no">01.4 / TREATMENT</div><div><h2>시술 성과 구조</h2>

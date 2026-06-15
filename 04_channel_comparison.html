@@ -54,6 +54,52 @@ footer{margin-top:45px;padding:36px 0 70px;border-top:1px solid var(--line);colo
 @media(max-width:760px){.links{display:none}.section-head{grid-template-columns:1fr;gap:6px}.kpis,.cards-2,.cards-3,.kpt,.flow{grid-template-columns:1fr}
 .decision{grid-template-columns:1fr}th,td{min-width:140px}}
 @media print{.topbar{position:static}.card,.gate-card,table,.note,.decision{box-shadow:none}body{background:#fff}}
+
+/* PAGE_THEME_OVERRIDE_START */
+:root{
+  --page-card-bg:#F2EEF4;
+  --page-card-border:#E1D8E5;
+  --page-title:#62506C;
+  --page-subtitle:#796B80;
+  --page-tag-bg:#E5DDEA;
+  --page-tag-text:#62506C;
+}
+.card{
+  background:var(--page-card-bg);
+  border-color:var(--page-card-border);
+}
+section h2,.section-head h2,
+section h3,.card h3{
+  color:var(--page-title);
+}
+section .lead,.section-head .lead,
+.card .label,.card .sub{
+  color:var(--page-subtitle);
+}
+.tag{
+  background:var(--page-tag-bg);
+  color:var(--page-tag-text);
+}
+.card p,.card li,.kpi .value,
+table,th,td{
+  color:inherit;
+}
+/* PAGE_THEME_OVERRIDE_END */
+
+/* BODY_TEXT_SCALE_START */
+/* 본문 및 데이터 설명 텍스트 120% 확대 */
+body{font-size:120%;}
+.hero p{font-size:clamp(20px,2.2vw,27px);}
+.lead{font-size:21.6px;}
+.card p,.card li,.gate-card p,.gate-card li{font-size:16.8px;}
+th,td{font-size:16.8px;}
+.kpi .label{font-size:16.8px;}
+.kpi .sub,.step .sub,.meta span,.tag,.status,.no,footer{font-size:15.6px;}
+.note,.decision{font-size:19.2px;}
+.links{font-size:15.6px;}
+.step .label{font-size:19.2px;}
+/* BODY_TEXT_SCALE_END */
+
 </style></head><body>
 <header class="topbar"><nav class="nav">
 <div class="brand">SERENE Monthly Performance</div>
