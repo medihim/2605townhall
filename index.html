@@ -1,439 +1,780 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>세린의원 월간 해외환자 사업 성과 Report</title><meta name="description" content="세린 전체, 에이전시, 일본 다이렉트 성과 게이트"><style>
-:root{
-  --bg:#f7f7f4;--paper:#fff;--ink:#171717;--muted:#676767;--line:#deded8;
-  --soft:#f1f1ec;--accent:#111;--gold:#8b6f47;--ok:#2f6f50;--danger:#a23b3b;
-  --blue:#2f4f6f;--shadow:0 18px 50px rgba(0,0,0,.08);--radius:22px
-}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,
-"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;line-height:1.7;word-break:keep-all}
-.topbar{position:sticky;top:0;z-index:20;background:rgba(247,247,244,.9);backdrop-filter:blur(16px);
-border-bottom:1px solid var(--line)}
-.nav{max-width:1240px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-weight:950;letter-spacing:-.04em}.links{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
-.links a{color:var(--muted);text-decoration:none}.links a:hover{color:var(--ink)}
-.wrap{max-width:1240px;margin:auto;padding:0 22px}
-.hero{padding:76px 0 42px}.eyebrow{display:inline-block;padding:7px 12px;border:1px solid var(--line);
-border-radius:999px;background:rgba(255,255,255,.7);font-size:13px;color:var(--muted);margin-bottom:22px}
-h1{font-size:clamp(38px,5vw,72px);line-height:1.08;letter-spacing:-.07em;margin:0;max-width:1060px}
-.hero p{font-size:clamp(17px,2vw,23px);color:#333;max-width:980px;letter-spacing:-.03em}
-.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.meta span{background:#fff;border:1px solid var(--line);
-border-radius:999px;padding:7px 11px;font-size:13px;color:var(--muted)}
-section{padding:46px 0}.section-head{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-bottom:24px}
-.no{font-size:13px;color:var(--muted);font-weight:900;letter-spacing:.04em;padding-top:8px}
-h2{font-size:clamp(28px,3.2vw,46px);line-height:1.15;letter-spacing:-.06em;margin:0}
-.lead{font-size:18px;color:#333;max-width:950px;margin:15px 0 0}
-.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(4,1fr)}
-.cards-2{grid-template-columns:repeat(2,1fr)}.cards-3{grid-template-columns:repeat(3,1fr)}
-.card,.gate-card,.note,.decision{background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-padding:24px;box-shadow:var(--shadow)}
-.kpi .label{font-size:14px;font-weight:900;color:var(--muted)}.kpi .value{font-size:36px;font-weight:950;
-letter-spacing:-.055em;margin:8px 0}.kpi .sub{font-size:13px;color:var(--muted)}
-.gate-card{display:block;text-decoration:none;color:inherit;transition:.2s;min-height:245px}
-.gate-card:hover{transform:translateY(-4px);border-color:#bbb}.tag{display:inline-block;background:var(--soft);
-padding:5px 9px;border-radius:999px;font-size:12px;font-weight:900;margin-bottom:10px}
-.gate-card h3,.card h3{font-size:22px;letter-spacing:-.04em;margin:0 0 10px}.gate-card p,.card p{color:var(--muted);margin:0}
-.gate-card ul,.card ul{color:var(--muted);padding-left:18px;font-size:14px}.gate-card li,.card li{margin:5px 0}
-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:18px;
-overflow:hidden;box-shadow:var(--shadow)}th,td{padding:14px 15px;border-bottom:1px solid var(--line);text-align:left;
-vertical-align:top;font-size:14px}th{background:#111;color:#fff;font-weight:900}tr:last-child td{border-bottom:0}
-.table-wrap{overflow-x:auto;border-radius:18px}.status{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:900}
-.good{background:#dceee4;color:#16442c}.mid{background:#efe5d3;color:#6f5430}.bad{background:#f2dddd;color:#6b2424}
-.info{background:#e1e9f1;color:#243f59}.note{background:#f8f4ec;border-color:#e7dcca;color:#4a3822}
-.note strong{display:block;margin-bottom:6px}.kpt{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
-.kpt .card:nth-child(1){border-top:4px solid var(--ok)}.kpt .card:nth-child(2){border-top:4px solid var(--danger)}
-.kpt .card:nth-child(3){border-top:4px solid var(--blue)}
-.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{background:#fff;border:1px solid var(--line);
-border-radius:18px;padding:19px;min-height:155px}.step .num{font-size:29px;font-weight:950;letter-spacing:-.05em}
-.step .label{font-weight:900;margin-top:5px}.step .sub{font-size:13px;color:var(--muted);margin-top:6px}
-footer{margin-top:45px;padding:36px 0 70px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-.actions{display:grid;gap:12px}.decision{display:grid;grid-template-columns:100px 1fr 1fr;gap:18px;align-items:start}
-.decision .p{background:#111;color:#fff;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:900;text-align:center}
-@media(max-width:1000px){.kpis,.cards-3{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:760px){.links{display:none}.section-head{grid-template-columns:1fr;gap:6px}.kpis,.cards-2,.cards-3,.kpt,.flow{grid-template-columns:1fr}
-.decision{grid-template-columns:1fr}th,td{min-width:140px}}
-@media print{.topbar{position:static}.card,.gate-card,table,.note,.decision{box-shadow:none}body{background:#fff}}
-
-/* INDEX_CARD_THEME_START */
-.gate-card.theme-sage{
-  background:#EDF3EE;border-color:#D6E1D7;
-}
-.gate-card.theme-sage h3{color:#355746}
-.gate-card.theme-sage p,
-.gate-card.theme-sage li{color:#617468}
-.gate-card.theme-sage .tag{background:#DDE9DF;color:#355746}
-
-.gate-card.theme-blue{
-  background:#EEF2F6;border-color:#D7E0E8;
-}
-.gate-card.theme-blue h3{color:#3F566B}
-.gate-card.theme-blue p,
-.gate-card.theme-blue li{color:#657687}
-.gate-card.theme-blue .tag{background:#DEE6ED;color:#3F566B}
-
-.gate-card.theme-terra{
-  background:#F5EFEC;border-color:#E7D9D1;
-}
-.gate-card.theme-terra h3{color:#745243}
-.gate-card.theme-terra p,
-.gate-card.theme-terra li{color:#846B61}
-.gate-card.theme-terra .tag{background:#EBDDD5;color:#745243}
-
-.gate-card.theme-plum{
-  background:#F2EEF4;border-color:#E1D8E5;
-}
-.gate-card.theme-plum h3{color:#62506C}
-.gate-card.theme-plum p,
-.gate-card.theme-plum li{color:#796B80}
-.gate-card.theme-plum .tag{background:#E5DDEA;color:#62506C}
-
-.gate-card.theme-teal{
-  background:#EDF3F2;border-color:#D5E2E0;
-}
-.gate-card.theme-teal h3{color:#405F5B}
-.gate-card.theme-teal p,
-.gate-card.theme-teal li{color:#687C79}
-.gate-card.theme-teal .tag{background:#DCE8E6;color:#405F5B}
-
-.gate-card.theme-sage:hover{border-color:#BFCFBE}
-.gate-card.theme-blue:hover{border-color:#C0CFDB}
-.gate-card.theme-terra:hover{border-color:#D6C2B7}
-.gate-card.theme-plum:hover{border-color:#CFC0D5}
-.gate-card.theme-teal:hover{border-color:#BDD0CC}
-/* INDEX_CARD_THEME_END */
-
-
-/* PASSWORD_GATE_STYLE_START */
-.password-gate{
-  position:fixed;
-  inset:0;
-  z-index:9999;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:24px;
-  background:rgba(17,17,17,.80);
-  backdrop-filter:blur(14px);
-}
-.password-panel{
-  width:min(440px,100%);
-  padding:30px;
-  background:#FFFFFF;
-  border:1px solid #DEDED8;
-  border-radius:24px;
-  box-shadow:0 30px 90px rgba(0,0,0,.35);
-}
-.password-panel .mini{
-  margin-bottom:8px;
-  color:#676767;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:.08em;
-}
-.password-panel h2{
-  margin:0 0 10px;
-  color:#171717;
-  font-size:30px;
-  letter-spacing:-.05em;
-}
-.password-panel p{
-  margin:0 0 18px;
-  color:#676767;
-}
-.password-panel input{
-  width:100%;
-  padding:15px 16px;
-  border:1px solid #CFCFC8;
-  border-radius:14px;
-  outline:none;
-  font-size:18px;
-}
-.password-panel input:focus{border-color:#171717}
-.password-panel button{
-  width:100%;
-  margin-top:12px;
-  padding:15px 16px;
-  border:0;
-  border-radius:14px;
-  background:#171717;
-  color:#FFFFFF;
-  font-size:16px;
-  font-weight:900;
-  cursor:pointer;
-}
-.password-panel button:hover{opacity:.92}
-.password-error{
-  min-height:24px;
-  margin-top:10px;
-  color:#A23B3B;
-  font-size:13px;
-  font-weight:800;
-}
-body.locked{overflow:hidden}
-/* PASSWORD_GATE_STYLE_END */
-
-
-/* BODY_TEXT_SCALE_START */
-/* 본문 및 데이터 설명 텍스트 120% 확대 */
-body{font-size:120%;}
-.hero p{font-size:clamp(20px,2.2vw,27px);}
-.lead{font-size:21.6px;}
-.card p,.card li,.gate-card p,.gate-card li{font-size:16.8px;}
-th,td{font-size:16.8px;}
-.kpi .label{font-size:16.8px;}
-.kpi .sub,.step .sub,.meta span,.tag,.status,.no,footer{font-size:15.6px;}
-.note,.decision{font-size:19.2px;}
-.links{font-size:15.6px;}
-.step .label{font-size:19.2px;}
-/* BODY_TEXT_SCALE_END */
-
-
-.gate-card.theme-amber{
-  background:#F4F0E6;
-  border-color:#E3DAC2;
-}
-.gate-card.theme-amber h3{color:#6E5F3F}
-.gate-card.theme-amber p,
-.gate-card.theme-amber li{color:#7C715A}
-.gate-card.theme-amber .tag{background:#E9E0C9;color:#6E5F3F}
-.gate-card.theme-amber:hover{border-color:#CFC09A}
-
-
-/* TABLE_HEADER_CONTRAST_FIX_START */
-/* 검은 표 헤더 배경 위 글자 대비 보정 */
-table thead th,
-.table-wrap table thead th{
-  background:#111111 !important;
-  color:#FFFFFF !important;
-  font-weight:900;
-}
-table tbody td,
-.table-wrap table tbody td{
-  color:#171717;
-}
-/* TABLE_HEADER_CONTRAST_FIX_END */
-
-
-
-
-
-
-
-
-
-
-
-/* SERENE_COMMON_GNB_CSS_START */
-.serene-common-gnb{
-  position:sticky;
-  top:0;
-  z-index:10000;
-  background:rgba(247,247,244,.96);
-  border-bottom:1px solid #deded8;
-  backdrop-filter:blur(16px);
-}
-.serene-common-gnb-inner{
-  max-width:1440px;
-  margin:0 auto;
-  padding:13px 22px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-}
-.serene-common-brand{
-  color:#171717!important;
-  font-size:15px!important;
-  font-weight:950!important;
-  letter-spacing:-.04em;
-  white-space:nowrap;
-  text-decoration:none!important;
-}
-.serene-common-links{
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;
-  gap:14px;
-  flex-wrap:wrap;
-}
-.serene-common-links a{
-  color:#676767!important;
-  font-size:15px!important;
-  font-weight:700!important;
-  line-height:1.35!important;
-  text-decoration:none!important;
-  padding:0!important;
-  margin:0!important;
-  border-radius:0!important;
-  background:transparent!important;
-}
-.serene-common-links a:hover{color:#171717!important}
-@media(max-width:1040px){
-  .serene-common-gnb-inner{
-    align-items:flex-start;
-    flex-direction:column;
-  }
-  .serene-common-links{
-    justify-content:flex-start;
-    gap:10px 14px;
-  }
-}
-@media(max-width:680px){
-  .serene-common-links a{font-size:13px!important}
-}
-/* SERENE_COMMON_GNB_CSS_END */
-
-</style></head><body class="locked">
-
-<!-- SERENE_COMMON_GNB_START -->
-<header class="serene-common-gnb">
-  <div class="serene-common-gnb-inner">
-    <a class="serene-common-brand" href="index.html">SERENE Monthly Performance</a>
-    <nav class="serene-common-links" aria-label="세린 월간 성과 리포트 메뉴">
-      <a href="index.html">HOME</a>
-<a href="01_total_business_report.html">세린 전체</a>
-<a href="02_agency_report.html">에이전시</a>
-<a href="03_japan_direct_report.html">일본 다이렉트</a>
-<a href="04_channel_comparison.html">채널 비교</a>
-<a href="05_data_methodology.html">데이터 기준</a>
-<a href="06_funnel_marketing_necessity_report.html">퍼널 필요성</a>
-    </nav>
-  </div>
-</header>
-<!-- SERENE_COMMON_GNB_END -->
-
-
-
-
-
-
-
-
-
-
-<!-- PASSWORD_GATE_MARKUP_START -->
-<div id="passwordGate" class="password-gate" aria-modal="true" role="dialog" aria-labelledby="passwordGateTitle">
-  <div class="password-panel">
-    <div class="mini">SERENE MONTHLY REPORT</div>
-    <h2 id="passwordGateTitle">비밀번호 입력</h2>
-    <p>월간 타운홀 리포트에 진입하려면 비밀번호를 입력해 주세요.</p>
-    <input id="passwordInput" type="password" inputmode="numeric" autocomplete="off"
-           placeholder="비밀번호" aria-label="비밀번호">
-    <button id="passwordSubmit" type="button">리포트 열기</button>
-    <div id="passwordError" class="password-error" aria-live="polite"></div>
-  </div>
-</div>
-<!-- PASSWORD_GATE_MARKUP_END -->
-
-
-
-<main class="wrap">
-<section class="hero">
-<div class="eyebrow">Mediheim Confidential · May 2026</div>
-<h1>세린의원 월간 해외환자<br>사업 성과 Report</h1>
-<p>세린 전체 매출, 에이전시 기반 성과, 일본 다이렉트 마케팅의 광고·CS·시술·수익성을 하나의 구조로 연결한 월간 타운홀 게이트입니다.</p>
-<div class="meta"><span>분석기간 2026.05.01–05.31</span><span>외국인 환자 56명</span><span>CRM 미연동 관측 리포트</span></div>
-</section>
-
-<section>
-<div class="section-head"><div class="no">00 / EXECUTIVE KPI</div><div><h2>월간 경영 KPI</h2>
-<p class="lead">전체 규모와 수익성을 먼저 보고, 이후 유치채널별 원인을 세부 페이지에서 확인합니다.</p></div></div>
-<div class="grid kpis">
-<div class="card kpi"><div class="label">외국인 환자</div><div class="value">56명</div><div class="sub">5월 전체</div></div>
-<div class="card kpi"><div class="label">세린 진료매출</div><div class="value">86,019,910원</div></div>
-<div class="card kpi"><div class="label">메디힘 총수익</div><div class="value">9,975,056원</div></div>
-<div class="card kpi"><div class="label">메디힘 수익률</div><div class="value">11.6%</div><div class="sub">진료매출 대비</div></div>
-</div>
-</section>
-
-<section>
-<div class="section-head"><div class="no">01 / REVENUE STRUCTURE</div><div><h2>매출 발생 구조</h2>
-<p class="lead">세린 전체 진료매출은 에이전시 기반과 일본 다이렉트 기반으로 구분합니다.</p></div></div>
-<div class="table-wrap"><table>
-<thead><tr><th>유치채널</th><th>환자 수</th><th>세린 진료매출</th><th>객단가</th><th>메디힘 수익</th><th>수익률</th></tr></thead>
-<tbody>
-<tr><td>아이메이</td><td>41</td><td>57,649,610원</td><td>1,406,088원</td><td>2,882,481원</td><td>5.0%</td></tr>
-<tr><td>그루비엑스</td><td>10</td><td>20,658,000원</td><td>2,065,800원</td><td>5,164,500원</td><td>25.0%</td></tr>
-<tr><td>일본 다이렉트</td><td>5</td><td>7,712,300원</td><td>1,542,460원</td><td>1,928,075원</td><td>25.0%</td></tr>
-<tr><td><strong>합계</strong></td><td><strong>56</strong></td><td><strong>86,019,910원</strong></td><td><strong>1,536,070원</strong></td><td><strong>9,975,056원</strong></td><td><strong>11.6%</strong></td></tr>
-</tbody></table></div>
-</section>
-
-<section>
-<div class="section-head"><div class="no">02 / REPORT GATE</div><div><h2>세부 Report</h2>
-<p class="lead">각 페이지는 서로 다른 경영 질문을 담당합니다.</p></div></div>
-<div class="grid cards-2">
-<a class="gate-card theme-sage" href="01_total_business_report.html"><span class="tag">01</span><h3>세린 전체 사업성과</h3>
-<p>전체 환자·매출·국가·시술 구조를 확인합니다.</p><ul><li>국가별 성과</li><li>시술별 성과</li><li>유치경로 구성</li></ul></a>
-<a class="gate-card theme-blue" href="02_agency_report.html"><span class="tag">02</span><h3>에이전시 기반 성과</h3>
-<p>아이메이·그루비엑스의 공급력과 수익성을 비교합니다.</p><ul><li>환자 수·객단가</li><li>메디힘 수익률</li><li>국가·시술 수요</li></ul></a>
-<a class="gate-card theme-terra" href="03_japan_direct_report.html"><span class="tag">03</span><h3>일본 다이렉트 성과</h3>
-<p>TOF·MOF·BOF부터 CS·시술·ROAS까지 분석합니다.</p><ul><li>퍼널별 광고</li><li>CS·예약 전환</li><li>수익성</li></ul></a>
-<a class="gate-card theme-plum" href="04_channel_comparison.html"><span class="tag">04</span><h3>채널 통합 비교</h3>
-<p>어느 채널에 자원을 더 배분할지 판단합니다.</p><ul><li>규모 vs 수익률</li><li>데이터 자산성</li><li>투자 우선순위</li></ul></a>
-<a class="gate-card theme-teal" href="05_data_methodology.html"><span class="tag">05</span><h3>데이터 기준·정합성</h3>
-<p>확정치·관측치·산식과 CRM 개선 기준을 확인합니다.</p><ul><li>지표 정의</li><li>데이터 한계</li><li>연결키</li></ul></a>
-
-<a class="gate-card theme-amber" href="06_funnel_marketing_necessity_report.html">
-  <span class="tag">06</span>
-  <h3>퍼널 마케팅 필요성</h3>
-  <p>왜 병원 일본 마케팅이 노출 중심이 아니라 퍼널 구조여야 하는지 설명합니다.</p>
-  <ul>
-    <li>정·반·합 논리</li>
-    <li>TOF·MOF·BOF 운영 원리</li>
-    <li>근거 자료와 90일 로드맵</li>
-  </ul>
-</a>
-
-</div>
-</section>
-
-<section>
-<div class="section-head"><div class="no">03 / FINAL KPT</div><div><h2>월간 종합 KPT</h2></div></div>
-<div class="kpt">
-<div class="card"><h3>KEEP</h3><ul><li>그루비엑스의 높은 객단가와 수익률</li><li>일본 다이렉트의 높은 귀속률</li><li>국가·채널별 매출 분리 관리</li></ul></div>
-<div class="card"><h3>PROBLEM</h3><ul><li>아이메이의 낮은 메디힘 수익률</li><li>일본 광고·CS·시술 미연결</li><li>시술별 개별 매출 배분 불가</li></ul></div>
-<div class="card"><h3>TRY</h3><ul><li>채널별 순기여액 관리</li><li>일본 문의→예약 전환 개선</li><li>환자·시술·매출 통합 ID 적용</li></ul></div>
-</div>
-</section>
-</main><footer><div class="wrap"><strong>Mediheim / Serene Clinic Monthly Report</strong><br>
-2026년 5월 광고·CS·시술·매출 원본을 기준으로 작성한 내부 경영 보고서입니다.</div></footer>
-<script>
-/* PASSWORD_GATE_SCRIPT_START */
-(function(){
-  const gate = document.getElementById('passwordGate');
-  const input = document.getElementById('passwordInput');
-  const submit = document.getElementById('passwordSubmit');
-  const error = document.getElementById('passwordError');
-  const PASSWORD = '5153370';
-
-  function unlock(){
-    if(input.value === PASSWORD){
-      sessionStorage.setItem('sereneGateUnlocked','1');
-      gate.style.display = 'none';
-      document.body.classList.remove('locked');
-      error.textContent = '';
-    }else{
-      error.textContent = '비밀번호가 올바르지 않습니다.';
-      input.value = '';
-      input.focus();
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>세린의원 월간 해외환자 사업 성과 Report</title>
+  <meta name="description" content="세린 해외환자 사업의 월간 성과와 볼륨·수익·역량 3축 전략">
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --paper: #ffffff;
+      --ink: #171717;
+      --muted: #676767;
+      --line: #deded8;
+      --soft: #f1f1ec;
+      --sage-bg: #edf3ee;
+      --sage: #355746;
+      --blue-bg: #eef2f6;
+      --blue: #3f566b;
+      --terra-bg: #f5efec;
+      --terra: #745243;
+      --plum-bg: #f2eef4;
+      --plum: #62506c;
+      --amber-bg: #f4f0e6;
+      --amber: #6e5f3f;
+      --ok: #2f6f50;
+      --danger: #a23b3b;
+      --shadow: 0 18px 50px rgba(0, 0, 0, .07);
+      --radius: 22px;
     }
-  }
 
-  if(sessionStorage.getItem('sereneGateUnlocked') === '1'){
-    gate.style.display = 'none';
-    document.body.classList.remove('locked');
-  }else{
-    setTimeout(function(){ input.focus(); }, 50);
-  }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo",
+        "Noto Sans KR", "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.72;
+      letter-spacing: -.015em;
+      word-break: keep-all;
+    }
+    body.locked { overflow: hidden; }
+    a { color: inherit; }
+    .wrap { width: min(1240px, calc(100% - 44px)); margin: 0 auto; }
 
-  submit.addEventListener('click', unlock);
-  input.addEventListener('keydown', function(event){
-    if(event.key === 'Enter') unlock();
-  });
-})();
-/* PASSWORD_GATE_SCRIPT_END */
-</script>
+    .serene-common-gnb {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 247, 244, .95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+    .serene-common-gnb-inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 13px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .serene-common-brand {
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: -.04em;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .serene-common-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .serene-common-links a {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+      line-height: 1.35;
+      text-decoration: none;
+    }
+    .serene-common-links a:hover,
+    .serene-common-links a:focus-visible { color: var(--ink); }
 
-</body></html>
+    .hero { padding: 76px 0 42px; }
+    .eyebrow,
+    .meta span,
+    .tag,
+    .status,
+    .axis-order {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      font-weight: 850;
+    }
+    .eyebrow {
+      padding: 7px 12px;
+      margin-bottom: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .72);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 1060px;
+      margin-bottom: 22px;
+      font-size: clamp(40px, 5vw, 72px);
+      line-height: 1.08;
+      letter-spacing: -.065em;
+    }
+    .hero p {
+      max-width: 1000px;
+      margin-bottom: 0;
+      color: #333;
+      font-size: clamp(19px, 2vw, 25px);
+      line-height: 1.58;
+      letter-spacing: -.035em;
+    }
+    .meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+    .meta span {
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section { padding: 48px 0; scroll-margin-top: 86px; }
+    .section-head {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      margin-bottom: 26px;
+    }
+    .no {
+      padding-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .04em;
+    }
+    h2 {
+      margin-bottom: 0;
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height: 1.16;
+      letter-spacing: -.055em;
+    }
+    h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 1.35;
+      letter-spacing: -.035em;
+    }
+    .lead {
+      max-width: 980px;
+      margin: 15px 0 0;
+      color: #3f3f3f;
+      font-size: 20px;
+      line-height: 1.65;
+    }
+    .grid { display: grid; gap: 16px; }
+    .kpis { grid-template-columns: repeat(4, 1fr); }
+    .cards-2 { grid-template-columns: repeat(2, 1fr); }
+    .cards-3 { grid-template-columns: repeat(3, 1fr); }
+    .card,
+    .gate-card,
+    .axis-card,
+    .statement,
+    .decision,
+    .principle-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .card,
+    .axis-card,
+    .principle-card { padding: 24px; }
+    .kpi .label { color: var(--muted); font-size: 15px; font-weight: 900; }
+    .kpi .value {
+      margin: 8px 0;
+      font-size: clamp(28px, 3vw, 38px);
+      font-weight: 950;
+      line-height: 1.2;
+      letter-spacing: -.055em;
+    }
+    .kpi .sub { color: var(--muted); font-size: 13px; }
+
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+    th, td {
+      padding: 15px 16px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 15px;
+    }
+    thead th { background: #111; color: #fff; font-weight: 900; }
+    tbody tr:last-child td { border-bottom: 0; }
+
+    /* 3축 전략 */
+    .strategy-shell {
+      padding: clamp(24px, 4vw, 42px);
+      border: 1px solid #d8d8d1;
+      border-radius: 30px;
+      background: linear-gradient(150deg, #fff 0%, #f3f3ee 100%);
+      box-shadow: 0 26px 70px rgba(0, 0, 0, .08);
+    }
+    .statement {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 4vw, 48px);
+      margin-bottom: 20px;
+      background: #171717;
+      color: #fff;
+    }
+    .statement::after {
+      content: "3 AXES";
+      position: absolute;
+      right: 26px;
+      bottom: -24px;
+      color: rgba(255, 255, 255, .055);
+      font-size: clamp(70px, 12vw, 150px);
+      font-weight: 950;
+      line-height: 1;
+      letter-spacing: -.08em;
+      pointer-events: none;
+    }
+    .statement .mini {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 14px;
+      color: #bdbdb6;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .1em;
+    }
+    .statement strong {
+      position: relative;
+      z-index: 1;
+      display: block;
+      max-width: 950px;
+      font-size: clamp(24px, 3vw, 38px);
+      line-height: 1.42;
+      letter-spacing: -.045em;
+    }
+    .axis-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .axis-card { position: relative; min-height: 390px; display: flex; flex-direction: column; }
+    .axis-card.volume { background: var(--sage-bg); border-color: #d6e1d7; }
+    .axis-card.profit { background: var(--blue-bg); border-color: #d7e0e8; }
+    .axis-card.capability { background: var(--terra-bg); border-color: #e7d9d1; }
+    .axis-order {
+      width: 34px;
+      height: 34px;
+      justify-content: center;
+      margin-bottom: 18px;
+      background: rgba(255, 255, 255, .72);
+      font-size: 13px;
+    }
+    .axis-card h3 { margin-bottom: 2px; font-size: 28px; }
+    .axis-card.volume h3, .axis-card.volume .axis-role { color: var(--sage); }
+    .axis-card.profit h3, .axis-card.profit .axis-role { color: var(--blue); }
+    .axis-card.capability h3, .axis-card.capability .axis-role { color: var(--terra); }
+    .axis-role { margin-bottom: 18px; font-size: 14px; font-weight: 900; }
+    .axis-card p { margin-bottom: 18px; color: #505050; font-size: 16px; }
+    .axis-card dl { margin: auto 0 0; }
+    .axis-card dl div {
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: 12px;
+      padding: 10px 0;
+      border-top: 1px solid rgba(23, 23, 23, .10);
+    }
+    .axis-card dt { color: var(--muted); font-size: 13px; font-weight: 850; }
+    .axis-card dd { margin: 0; font-size: 14px; font-weight: 750; }
+    .portfolio-note {
+      margin: 18px 0 0;
+      padding: 17px 20px;
+      border-left: 4px solid #171717;
+      background: #fff;
+      color: #3f3f3f;
+      font-size: 16px;
+    }
+
+    .message-box {
+      margin-top: 20px;
+      padding: clamp(24px, 4vw, 38px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .message-box .mini,
+    .subsection-title .mini {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .09em;
+    }
+    .message-box blockquote {
+      margin: 14px 0 0;
+      padding: 0;
+      border: 0;
+      font-size: clamp(20px, 2.3vw, 28px);
+      font-weight: 800;
+      line-height: 1.62;
+      letter-spacing: -.035em;
+    }
+    .subsection-title { margin: 34px 0 16px; }
+    .subsection-title h3 { margin: 5px 0 0; font-size: 28px; }
+    .diagnosis-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .diagnosis-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .diagnosis-card .wrong,
+    .diagnosis-card .right {
+      display: block;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .diagnosis-card .wrong { color: var(--danger); }
+    .diagnosis-card .right { margin-top: 13px; color: var(--ok); }
+    .diagnosis-card p { margin: 4px 0 0; color: #4f4f4f; font-size: 15px; }
+    .effects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .effects .card:first-child { border-top: 4px solid var(--sage); }
+    .effects .card:last-child { border-top: 4px solid var(--blue); }
+    .effects ul,
+    .principle-card ol { margin: 12px 0 0; padding-left: 21px; }
+    .effects li,
+    .principle-card li { margin: 7px 0; color: #4f4f4f; font-size: 15px; }
+    .principle-card { margin-top: 16px; }
+    .principle-card ol { columns: 2; column-gap: 46px; }
+    .principle-card li { break-inside: avoid; padding-right: 12px; }
+    .closing-line {
+      margin-top: 18px;
+      padding: 24px;
+      border-radius: 18px;
+      background: #171717;
+      color: #fff;
+      font-size: clamp(19px, 2.3vw, 27px);
+      font-weight: 850;
+      line-height: 1.58;
+      letter-spacing: -.035em;
+    }
+
+    .gate-card {
+      display: block;
+      min-height: 245px;
+      padding: 24px;
+      color: inherit;
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .gate-card:hover { transform: translateY(-4px); }
+    .gate-card .tag { padding: 5px 9px; margin-bottom: 10px; background: rgba(255,255,255,.6); font-size: 12px; }
+    .gate-card p { margin-bottom: 0; color: var(--muted); font-size: 16px; }
+    .gate-card ul,
+    .card ul { padding-left: 19px; color: var(--muted); font-size: 15px; }
+    .gate-card li,
+    .card li { margin: 5px 0; }
+    .theme-sage { background: var(--sage-bg); border-color: #d6e1d7; }
+    .theme-blue { background: var(--blue-bg); border-color: #d7e0e8; }
+    .theme-terra { background: var(--terra-bg); border-color: #e7d9d1; }
+    .theme-plum { background: var(--plum-bg); border-color: #e1d8e5; }
+    .theme-teal { background: #edf3f2; border-color: #d5e2e0; }
+    .theme-amber { background: var(--amber-bg); border-color: #e3dac2; }
+
+    .kpt { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .kpt .card:nth-child(1) { border-top: 4px solid var(--ok); }
+    .kpt .card:nth-child(2) { border-top: 4px solid var(--danger); }
+    .kpt .card:nth-child(3) { border-top: 4px solid var(--blue); }
+
+    footer {
+      margin-top: 45px;
+      padding: 36px 0 70px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .password-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(17, 17, 17, .80);
+      backdrop-filter: blur(14px);
+    }
+    .password-panel {
+      width: min(440px, 100%);
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 30px 90px rgba(0, 0, 0, .35);
+    }
+    .password-panel .mini { margin-bottom: 8px; color: var(--muted); font-size: 12px; font-weight: 900; letter-spacing: .08em; }
+    .password-panel h2 { margin-bottom: 10px; font-size: 30px; }
+    .password-panel p { margin-bottom: 18px; color: var(--muted); font-size: 16px; }
+    .password-panel input {
+      width: 100%;
+      padding: 15px 16px;
+      border: 1px solid #cfcfc8;
+      border-radius: 14px;
+      outline: none;
+      font-size: 18px;
+    }
+    .password-panel input:focus { border-color: #171717; }
+    .password-panel button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 15px 16px;
+      border: 0;
+      border-radius: 14px;
+      background: #171717;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .password-error { min-height: 24px; margin-top: 10px; color: var(--danger); font-size: 13px; font-weight: 800; }
+
+    @media (max-width: 1040px) {
+      .serene-common-gnb-inner { align-items: flex-start; flex-direction: column; }
+      .serene-common-links { justify-content: flex-start; gap: 10px 14px; }
+      .kpis { grid-template-columns: repeat(2, 1fr); }
+      .axis-grid,
+      .diagnosis-grid { grid-template-columns: 1fr; }
+      .axis-card { min-height: auto; }
+    }
+    @media (max-width: 760px) {
+      body { font-size: 16px; }
+      .wrap { width: min(100% - 28px, 1240px); }
+      .serene-common-gnb-inner { padding: 11px 14px; }
+      .serene-common-links { width: 100%; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; }
+      .serene-common-links a { flex: 0 0 auto; font-size: 13px; }
+      .hero { padding: 50px 0 26px; }
+      .hero br { display: none; }
+      section { padding: 38px 0; }
+      .section-head { grid-template-columns: 1fr; gap: 6px; }
+      .kpis,
+      .cards-2,
+      .cards-3,
+      .effects,
+      .kpt { grid-template-columns: 1fr; }
+      .strategy-shell { padding: 18px; border-radius: 22px; }
+      .statement { padding: 27px 22px; }
+      .statement::after { display: none; }
+      .axis-card dl div { grid-template-columns: 70px 1fr; }
+      .principle-card ol { columns: 1; }
+      th, td { min-width: 130px; font-size: 14px; }
+    }
+    @media print {
+      body { background: #fff; font-size: 12pt; }
+      .serene-common-gnb,
+      .password-gate { display: none !important; }
+      .card,
+      .gate-card,
+      .axis-card,
+      .strategy-shell,
+      .statement,
+      .table-wrap { box-shadow: none; }
+      .axis-grid,
+      .diagnosis-grid { grid-template-columns: repeat(3, 1fr); }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+
+<body class="locked">
+  <header class="serene-common-gnb">
+    <div class="serene-common-gnb-inner">
+      <a class="serene-common-brand" href="index.html">SERENE Monthly Performance</a>
+      <nav class="serene-common-links" aria-label="세린 월간 성과 리포트 메뉴">
+        <a href="index.html">HOME</a>
+        <a href="#serene-strategy">3축 전략</a>
+        <a href="01_total_business_report.html">세린 전체</a>
+        <a href="02_agency_report.html">에이전시</a>
+        <a href="03_japan_direct_report.html">일본 다이렉트</a>
+        <a href="04_channel_comparison.html">채널 비교</a>
+        <a href="05_data_methodology.html">데이터 기준</a>
+        <a href="06_funnel_marketing_necessity_report.html">퍼널 필요성</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="passwordGate" class="password-gate" aria-modal="true" role="dialog" aria-labelledby="passwordGateTitle">
+    <div class="password-panel">
+      <div class="mini">SERENE MONTHLY REPORT</div>
+      <h2 id="passwordGateTitle">비밀번호 입력</h2>
+      <p>월간 타운홀 리포트에 진입하려면 비밀번호를 입력해 주세요.</p>
+      <input id="passwordInput" type="password" inputmode="numeric" autocomplete="off" placeholder="비밀번호" aria-label="비밀번호">
+      <button id="passwordSubmit" type="button">리포트 열기</button>
+      <div id="passwordError" class="password-error" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Medihim Confidential · May 2026</div>
+      <h1>세린의원 월간 해외환자<br>사업 성과 Report</h1>
+      <p>세린 전체 매출, 에이전시 기반 성과, 일본 다이렉트 마케팅의 광고·CS·시술·수익성을 하나의 구조로 연결한 월간 타운홀 게이트입니다.</p>
+      <div class="meta">
+        <span>분석기간 2026.05.01–05.31</span>
+        <span>외국인 환자 56명</span>
+        <span>CRM 미연동 관측 리포트</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="no">00 / EXECUTIVE KPI</div>
+        <div>
+          <h2>월간 경영 KPI</h2>
+          <p class="lead">전체 규모와 수익성을 먼저 보고, 이후 유치채널별 원인을 세부 페이지에서 확인합니다.</p>
+        </div>
+      </div>
+      <div class="grid kpis">
+        <div class="card kpi"><div class="label">외국인 환자</div><div class="value">56명</div><div class="sub">5월 전체</div></div>
+        <div class="card kpi"><div class="label">세린 진료매출</div><div class="value">86,019,910원</div></div>
+        <div class="card kpi"><div class="label">메디힘 총수익</div><div class="value">9,975,056원</div></div>
+        <div class="card kpi"><div class="label">메디힘 수익률</div><div class="value">11.6%</div><div class="sub">진료매출 대비</div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="no">01 / REVENUE STRUCTURE</div>
+        <div>
+          <h2>매출 발생 구조</h2>
+          <p class="lead">세린 전체 진료매출은 에이전시 기반과 일본 다이렉트 기반으로 구분합니다.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>유치채널</th><th>환자 수</th><th>세린 진료매출</th><th>객단가</th><th>메디힘 수익</th><th>수익률</th></tr></thead>
+          <tbody>
+            <tr><td>아이메이</td><td>41</td><td>57,649,610원</td><td>1,406,088원</td><td>2,882,481원</td><td>5.0%</td></tr>
+            <tr><td>그루비엑스</td><td>10</td><td>20,658,000원</td><td>2,065,800원</td><td>5,164,500원</td><td>25.0%</td></tr>
+            <tr><td>일본 다이렉트</td><td>5</td><td>7,712,300원</td><td>1,542,460원</td><td>1,928,075원</td><td>25.0%</td></tr>
+            <tr><td><strong>합계</strong></td><td><strong>56</strong></td><td><strong>86,019,910원</strong></td><td><strong>1,536,070원</strong></td><td><strong>9,975,056원</strong></td><td><strong>11.6%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="serene-strategy">
+      <div class="section-head">
+        <div class="no">02 / STRATEGIC ALIGNMENT</div>
+        <div>
+          <h2>세린 계약 유지의 3축 전략</h2>
+          <p class="lead">세린 운영은 개별 국가나 파트너의 단기 성과를 따로 평가하는 구조가 아닙니다. 볼륨·수익·역량을 단계적으로 확보해 계약 유지 명분을 만드는 포트폴리오입니다.</p>
+        </div>
+      </div>
+
+      <div class="strategy-shell">
+        <div class="statement">
+          <div class="mini">CORE STRATEGY</div>
+          <strong>중국으로 볼륨을 만들고, 대만으로 수익을 증명하며, 일본 직접 마케팅 역량을 메디힘 내부에 축적한다.</strong>
+        </div>
+
+        <div class="axis-grid" aria-label="세린 전략 3축">
+          <article class="axis-card volume">
+            <span class="axis-order">01</span>
+            <h3>볼륨축</h3>
+            <div class="axis-role">아이메이 · 중국 · 초기 명분</div>
+            <p>환자 수와 진료매출 규모를 빠르게 확보해 메디힘의 유치 실행력을 증명합니다.</p>
+            <dl>
+              <div><dt>핵심 역할</dt><dd>환자·매출 볼륨 확보</dd></div>
+              <div><dt>평가 KPI</dt><dd>문의, 예약, 내원, 환자 수, 진료매출</dd></div>
+              <div><dt>기대 효과</dt><dd>계약 유지의 초기 성과 근거</dd></div>
+            </dl>
+          </article>
+
+          <article class="axis-card profit">
+            <span class="axis-order">02</span>
+            <h3>수익축</h3>
+            <div class="axis-role">그루비엑스 · 대만 · 중기 명분</div>
+            <p>운영비와 광고비를 넘어서는 공헌이익을 확보해 사업의 지속 가능성을 증명합니다.</p>
+            <dl>
+              <div><dt>핵심 역할</dt><dd>비용 대비 실질 수익 창출</dd></div>
+              <div><dt>평가 KPI</dt><dd>매출, 광고비, 운영비, 공헌이익, SLA</dd></div>
+              <div><dt>기대 효과</dt><dd>계약 유지의 중기 수익 근거</dd></div>
+            </dl>
+          </article>
+
+          <article class="axis-card capability">
+            <span class="axis-order">03</span>
+            <h3>역량축</h3>
+            <div class="axis-role">일본 직접 마케팅 · 핵심·장기 명분</div>
+            <p>콘텐츠·광고·LINE·상담·예약·매출을 직접 연결해 다른 병원에도 복제 가능한 내부 자산을 만듭니다.</p>
+            <dl>
+              <div><dt>핵심 역할</dt><dd>환자 유치 역량·데이터 내재화</dd></div>
+              <div><dt>평가 KPI</dt><dd>발행, 유입, 상담, 예약, 매출, 전환율</dd></div>
+              <div><dt>기대 효과</dt><dd>MSO 핵심 역량과 장기 계약 근거</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <p class="portfolio-note"><strong>판단 원칙:</strong> 세 축은 서로 대체하는 관계가 아닙니다. 각 축의 역할과 KPI가 다르므로, 단일 월 매출이나 특정 운영 이슈만으로 전체 전략을 판단하지 않습니다.</p>
+
+        <div class="message-box">
+          <div class="mini">MEETING MESSAGE</div>
+          <blockquote>세린 운영의 목적은 병원의 요청을 수동적으로 처리하는 것이 아니라, 메디힘이 설계한 볼륨·수익·역량의 3개 축을 실행해 세린의 매출을 성장시키고 계약 유지 명분을 확보하는 것입니다.</blockquote>
+        </div>
+
+        <div class="subsection-title">
+          <div class="mini">CORRECT THE FRAME</div>
+          <h3>현재 인식에서 바로잡아야 할 3가지</h3>
+        </div>
+        <div class="diagnosis-grid">
+          <article class="diagnosis-card">
+            <span class="wrong">오해 01</span>
+            <h3>“우리가 남는 이유가 없다”</h3>
+            <span class="right">정확한 판단 기준</span>
+            <p>개별 월 수익만이 아니라 전체 매출 기여, 채널별 공헌이익, 계약 유지 효과, 내부 역량 축적을 함께 평가합니다.</p>
+          </article>
+          <article class="diagnosis-card">
+            <span class="wrong">오해 02</span>
+            <h3>“병원 요구에 끌려다닌다”</h3>
+            <span class="right">정확한 판단 기준</span>
+            <p>메디힘이 먼저 제안한 해외환자 성장 구조의 활동 근거와 성과를 설명하는 것은 사업 운영자의 기본 책임입니다.</p>
+          </article>
+          <article class="diagnosis-card">
+            <span class="wrong">오해 03</span>
+            <h3>“업로드 지연이 곧 교체 사유다”</h3>
+            <span class="right">정확한 판단 기준</span>
+            <p>그루비엑스는 SLA와 함께 광고비 대비 매출, 수수료 수익, 공헌이익, 지속 가능성을 종합 평가합니다.</p>
+          </article>
+        </div>
+
+        <div class="subsection-title">
+          <div class="mini">EXPECTED EFFECT</div>
+          <h3>전략의 기대효과</h3>
+        </div>
+        <div class="effects">
+          <article class="card">
+            <h3>세린 관점</h3>
+            <ul>
+              <li>중국을 통한 빠른 환자 볼륨 확보</li>
+              <li>대만을 통한 실질 수익 기여</li>
+              <li>일본 직접 마케팅을 통한 장기 성장 채널 확보</li>
+              <li>특정 국가·파트너 의존도 감소</li>
+              <li>메디힘과 계약을 유지할 사업적 근거 형성</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>메디힘 관점</h3>
+            <ul>
+              <li>단순 대행사가 아닌 성과형 MSO로 포지셔닝</li>
+              <li>국가별 환자 유치 포트폴리오 확보</li>
+              <li>일본 콘텐츠–광고–LINE–상담–예약–매출 연결</li>
+              <li>외주 의존도 및 파트너 리스크 감소</li>
+              <li>다른 병원에 복제 가능한 일본 유치 플레이북 구축</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="subsection-title">
+          <div class="mini">OPERATING PRINCIPLES</div>
+          <h3>김대진 이사·유정은 파트장 운영 원칙</h3>
+        </div>
+        <article class="principle-card">
+          <ol>
+            <li>국가별 채널을 동일한 기준으로 평가하지 않습니다.</li>
+            <li>아이메이는 볼륨, 그루비엑스는 공헌이익, 일본은 내부 역량과 직접 매출로 평가합니다.</li>
+            <li>세린 전체 매출과 환자 수를 기준으로 성과를 보고합니다.</li>
+            <li>개별 활동에는 목적·비용·성과 근거가 있어야 합니다.</li>
+            <li>일본 직접 마케팅의 콘텐츠·광고·LINE·CRM 운영을 지연 없이 내부화합니다.</li>
+            <li>파트너 변경은 감정이나 단일 이슈가 아니라 KPI와 대체 운영안에 근거해 결정합니다.</li>
+            <li>국가별 KPI와 세린 전체 성과를 매주 통합 보고합니다.</li>
+          </ol>
+        </article>
+
+        <div class="subsection-title">
+          <div class="mini">WEEKLY DASHBOARD</div>
+          <h3>주간 통합 보고지표</h3>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>구분</th><th>전략 역할</th><th>핵심 보고지표</th><th>경영 질문</th></tr></thead>
+            <tbody>
+              <tr><td>중국·아이메이</td><td>볼륨축</td><td>문의, 예약, 내원, 환자 수, 매출</td><td>계약 유지에 필요한 규모를 만들고 있는가?</td></tr>
+              <tr><td>대만·그루비엑스</td><td>수익축</td><td>광고비, 운영비, 매출, 수수료 수익, 공헌이익, SLA</td><td>비용을 넘어서는 실질 수익을 만들고 있는가?</td></tr>
+              <tr><td>일본 직접</td><td>역량축</td><td>콘텐츠 발행, 광고 성과, LINE 유입, 상담, 예약, 매출</td><td>직접 운영 역량과 데이터가 축적되고 있는가?</td></tr>
+              <tr><td><strong>세린 전체</strong></td><td><strong>통합 성과</strong></td><td><strong>전체 해외매출, 국가별 비중, 메디힘 수익, 운영 이슈</strong></td><td><strong>3축이 함께 계약 유지 명분을 강화하는가?</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="closing-line">세린 운영의 핵심은 병원의 요청을 처리하는 것이 아니라, 중국으로 볼륨을 만들고 대만으로 수익을 증명하며 일본 직접 마케팅 역량을 내부에 축적해 세린이 메디힘과 계속 계약해야 할 이유를 만드는 것입니다.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="no">03 / REPORT GATE</div>
+        <div><h2>세부 Report</h2><p class="lead">각 페이지는 서로 다른 경영 질문을 담당합니다.</p></div>
+      </div>
+      <div class="grid cards-2">
+        <a class="gate-card theme-sage" href="01_total_business_report.html"><span class="tag">01</span><h3>세린 전체 사업성과</h3><p>전체 환자·매출·국가·시술 구조를 확인합니다.</p><ul><li>국가별 성과</li><li>시술별 성과</li><li>유치경로 구성</li></ul></a>
+        <a class="gate-card theme-blue" href="02_agency_report.html"><span class="tag">02</span><h3>에이전시 기반 성과</h3><p>아이메이·그루비엑스의 공급력과 수익성을 비교합니다.</p><ul><li>환자 수·객단가</li><li>메디힘 수익률</li><li>국가·시술 수요</li></ul></a>
+        <a class="gate-card theme-terra" href="03_japan_direct_report.html"><span class="tag">03</span><h3>일본 다이렉트 성과</h3><p>TOF·MOF·BOF부터 CS·시술·ROAS까지 분석합니다.</p><ul><li>퍼널별 광고</li><li>CS·예약 전환</li><li>수익성</li></ul></a>
+        <a class="gate-card theme-plum" href="04_channel_comparison.html"><span class="tag">04</span><h3>채널 통합 비교</h3><p>어느 채널에 자원을 더 배분할지 판단합니다.</p><ul><li>규모 vs 수익률</li><li>데이터 자산성</li><li>투자 우선순위</li></ul></a>
+        <a class="gate-card theme-teal" href="05_data_methodology.html"><span class="tag">05</span><h3>데이터 기준·정합성</h3><p>확정치·관측치·산식과 CRM 개선 기준을 확인합니다.</p><ul><li>지표 정의</li><li>데이터 한계</li><li>연결키</li></ul></a>
+        <a class="gate-card theme-amber" href="06_funnel_marketing_necessity_report.html"><span class="tag">06</span><h3>퍼널 마케팅 필요성</h3><p>왜 병원 일본 마케팅이 노출 중심이 아니라 퍼널 구조여야 하는지 설명합니다.</p><ul><li>정·반·합 논리</li><li>TOF·MOF·BOF 운영 원리</li><li>근거 자료와 90일 로드맵</li></ul></a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div class="no">04 / FINAL KPT</div><div><h2>월간 종합 KPT</h2></div></div>
+      <div class="kpt">
+        <div class="card"><h3>KEEP</h3><ul><li>그루비엑스의 높은 객단가와 수익률</li><li>일본 다이렉트의 높은 귀속률</li><li>국가·채널별 매출 분리 관리</li></ul></div>
+        <div class="card"><h3>PROBLEM</h3><ul><li>아이메이의 낮은 메디힘 수익률</li><li>일본 광고·CS·시술 미연결</li><li>시술별 개별 매출 배분 불가</li></ul></div>
+        <div class="card"><h3>TRY</h3><ul><li>채널별 순기여액 관리</li><li>일본 문의→예약 전환 개선</li><li>환자·시술·매출 통합 ID 적용</li></ul></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><strong>Medihim / Serene Clinic Monthly Report</strong><br>2026년 5월 광고·CS·시술·매출 원본을 기준으로 작성한 내부 경영 보고서입니다.</div>
+  </footer>
+
+  <script>
+    (function () {
+      const gate = document.getElementById('passwordGate');
+      const input = document.getElementById('passwordInput');
+      const submit = document.getElementById('passwordSubmit');
+      const error = document.getElementById('passwordError');
+      const PASSWORD = '5153370';
+
+      function unlock() {
+        if (input.value === PASSWORD) {
+          sessionStorage.setItem('sereneGateUnlocked', '1');
+          gate.style.display = 'none';
+          document.body.classList.remove('locked');
+          error.textContent = '';
+        } else {
+          error.textContent = '비밀번호가 올바르지 않습니다.';
+          input.value = '';
+          input.focus();
+        }
+      }
+
+      if (sessionStorage.getItem('sereneGateUnlocked') === '1') {
+        gate.style.display = 'none';
+        document.body.classList.remove('locked');
+      } else {
+        setTimeout(function () { input.focus(); }, 50);
+      }
+
+      submit.addEventListener('click', unlock);
+      input.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') unlock();
+      });
+    }());
+  </script>
+</body>
+</html>
